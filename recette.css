@@ -1,0 +1,167 @@
+/* STYLE POUR MOBILE */
+
+*{      /* s'applique à l'ensemble*/
+    overflow: auto;
+}
+body{   /* couleur de fond et choix de police de caractère */
+    background-color: #8ba1bb;
+    font-family: Arial;
+}
+p.categorie{    /* entête "Recette" */
+    background-color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: -15px;
+    margin-bottom: 0;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.categorie{  /* entête "Recette" */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+div.contenu{    /* tous les éléments */
+    background-color: white;
+    margin: 40px 8px 20px 8px;
+    padding: 0px 8px 20px 8px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+}
+h1{     /* titre de la recette */
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+p.description{  /* descriptif sous le titre */
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+    font-size: 14px;
+}
+.centre{    /* pour la description sous le titre et l'image */
+    text-align: center;
+    width: 100%;
+}
+div.separateur{ /* ligne de séparation */
+    width: 100px;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.info{   /* conteneur image + tableau au bas de l'image */
+    position: relative;
+}
+img.info{ /* image */
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: lightgray;
+}
+table.info{ /* tableau au bas de l'image */
+    position: absolute; 
+    bottom: 0; width: 100%; 
+    color: white; 
+    background-color: #6c829dc0;
+    height: 50px;
+}
+table.info td{  /* ligne du bas du tableau */
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;
+}
+table.info th{  /* ligne du haut du tableau */
+    font-size: 14px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+div.colonne{    /* les 2 colonnes des listes */
+    width: 100%;
+    margin-top: 20px;
+}
+div.colonne h2{ /* titre des 2 colonnes */
+text-align: center;
+text-transform: uppercase;
+font-size: 15px;
+border-bottom: 5px solid #6c829d;
+padding-bottom: 5px;
+}
+div.colonne1{   /* colonne 1 */
+    display: inline-block; 
+}
+div.ingredients p{  /* éléments de la colonne 1 */
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+table.preparation p.numero{ /* numéros de la colonne 2 */
+    background-color: #6c829d;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+table.preparation td{   /* éléments de la colonne 2 */
+    vertical-align: top;
+}
+table.preparation td.prepa_etape{   /* partie de droite de la colonne 2 */
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+table.preparation tr{   /* lignes de la colonne 2 */
+    height: 40px;
+}
+
+/* STYLES POUR ORDINATEURS */
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+    }
+    table.info{
+        height: 80px;
+    }
+    table.info td{
+        font-size: 14px;
+    }
+    table.info th{
+        font-size: 16px;
+    }
+    div.colonne{    /* les 2 colonnes des listes */
+        width: 45%;
+    }
+    div.colonne1{   /* colonne 1 */
+        margin-right: 10%;
+    }
+    div.colonne2{   /* colonne 2 */
+        float: right;
+    }   
+}
+@media only screen and (min-width: 900px) {
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+}
+
+
+
+
+
+
+
+
